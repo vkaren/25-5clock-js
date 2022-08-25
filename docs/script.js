@@ -73,7 +73,7 @@ $(document).ready(function () {
         }
         timeDisplay.text(currentTime);
         currentTime = subtractTime(currentTime.split(":"));
-        setTimeout(onClickStartStop, 100);
+        setTimeout(onClickStartStop, 1000);
       } else {
         clearInterval(onClickStartStop);
       }
