@@ -86,7 +86,7 @@ $(document).ready(function () {
         time[0] - 1 < 10 ? (time[0] = "0" + (time[0] - 1)) : (time[0] = time[0] - 1);
         time[1] = 59;
       }
-      if (time[0] == 0 && time[1] <= 10) {
+      if (time[0] == 0 && time[1] < 10) {
         timeDisplay.css("color", "rgb(168, 25, 0)");
       } else {
         timeDisplay.css("color", "rgb(24, 29, 26)");
